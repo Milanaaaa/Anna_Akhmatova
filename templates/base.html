@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<HEAD>
+    <META charset="UTF-8">
+    <TITLE>Анна Ахматова</TITLE>
+    <link rel="icon" href="static/img/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+</HEAD>
+<BODY style="background-color:#f2ddc6">
+<NAV class="navbar navbar-expand-lg navbar-light bg-light">
+    <DIV class="container-fluid">
+        <A class="navbar-brand">Меню</A>
+        <BUTTON class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <SPAN class="navbar-toggler-icon"></SPAN>
+        </BUTTON>
+        <DIV class="collapse navbar-collapse" id="navbarNav">
+            <UL class="navbar-nav">
+                <LI class="nav-item">
+                    <A class="nav-link active" href="/">Главная</A>
+                </LI>
+                <LI class="nav-item">
+                    <A class="nav-link active" href="/biography">Биография</A>
+                </LI>
+                <LI class="nav-item">
+                    <A class="nav-link active" href="/creativity">Творчество</A>
+                </LI>
+                <LI class="nav-item">
+                    <A class="nav-link active" href="/author_page">Авторская страница</A>
+                </LI>
+                <LI class="nav-item">
+                    <A class="nav-link active" href="/list_sources">Список источников</A>
+                </LI>
+            </UL>
+        </DIV>
+    </DIV>
+</NAV>
+<DIV class="container">
+    {% block content %}
+    {% endblock %}
+</DIV>
+</BODY>

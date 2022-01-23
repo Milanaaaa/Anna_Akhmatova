@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<H1>Интересные факты</H1>
+
+<P>
+<H3>Узнав о предпочтениях человека, можно предположить, что он за личность. Известная поэтесса Анна Ахматова предлагала
+    своим знакомым ответить на вопросы и по ним составляла их психологический портрет. Анна Андреевна была склонна
+    делить мир на черное и белое, поэтому ее анкета кажется несколько однобокой. Тем не менее рациональное зерно в ней
+    однозначно присутствует.</H3>
+</P>
+
+<P>
+<H4>Выберите в каждом вопросе один из двух вариантов</H4>
+</P>
+<P>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+    <label class="form-check-label" for="exampleRadios1">
+        Чай
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+        Кофе
+    </label>
+</div>
+</P>
+
+<P>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1">
+    <label class="form-check-label" for="exampleRadios1">
+        Кошки
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+        Собаки
+    </label>
+</div>
+</P>
+
+<P>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios1" value="option1">
+    <label class="form-check-label" for="exampleRadios1">
+        Борис Пастернак
+    </label>
+</div>
+<div class="form-check">
+    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="option2">
+    <label class="form-check-label" for="exampleRadios2">
+        Осип Мандельштам
+    </label>
+</div>
+</P>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Результаты
+        </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+         data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">1. Те, кто выбрал чай, собаку и Пастернака.
+
+            <BR>По мнению поэтессы, это психически нормальная личность, надежный человек. Несколько простоватый, но
+            оптимистически настроенный и душевно здоровый. Уравновешенный и не склонный менять своих решений, прямой и
+            честный. Такой человек практичен и отлично показывает себя в деловой сфере. Набор «чай, собака, Пастернак» —
+            это «московский» полюс.
+            <BR>
+            <BR>2. Те, кто выбрал кофе, кошку и Мандельштама.
+
+            <BR>Это более изысканная личность. Но вот в области нравственности у него случаются противоречия. Это человек
+            постоянных душевных метаний, пессимист по натуре, который склонен преувеличивать и драматизировать. Такие
+            люди то и дело меняют свое мнение по разным вопросам и свои взгляды на тот или иной предмет, и у них часто
+            не бывает конкретного плана в жизни. Это человек-«петербуржец».
+
+        </div>
+    </div>
+</div>
+
+<DIV class="alert alert-danger" role="alert">
+    Интересные факты об Анне Ахматовой <A href="/facts">здесь</A>
+</DIV>
+
+{% endblock %}

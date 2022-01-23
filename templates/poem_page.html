@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<H1>{{ title }}</H1>
+<P style="font-weight: bold;">Год написания: {{ date }}</P>
+{% for s in text.split('\n') %}
+<P>{{ s }}</P>
+{% endfor %}
+<A href="/poems">Назад</A>
+{% endblock %}

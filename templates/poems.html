@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<H1>Стихотворения</H1>
+
+<P>
+<DIV class="alert alert-info" role="alert">
+    <A href="creativity">Творческий путь Анны Ахматовой</A>
+</DIV>
+</P>
+
+<CENTER>
+    {% for pm in list_poems %}
+    <P>
+    <DIV class="card" style="width: 18rem;">
+        <DIV class="card-body">
+            <H5 class="card-title">{{ pm['title'] }}</H5>
+        </DIV>
+        <UL class="list-group list-group-flush">
+            <LI class="list-group-item">Год написания: {{ pm['date'] }}</LI>
+        </UL>
+        <DIV class="card-body">
+            <A href="/poem_page/{{ pm['id'] }}" class="card-link">Читать</A>
+        </DIV>
+    </DIV>
+    </P>
+    {% endfor %}
+</CENTER>
+
+{% endblock %}
